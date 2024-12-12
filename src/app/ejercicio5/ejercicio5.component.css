@@ -1,0 +1,40 @@
+header{
+    background-color: rgb(45, 45, 52);
+    padding: 50px;
+    text-align: center;
+    font-family: "Agu Display", serif;
+    font-size: 20px;
+   
+}
+
+/*Ejercicio 8: Nav menu
+Aplicar color de fondo a la etiqueta nav y color de texto.
+Eliminar las bullets de la <ul> con: list-style: none;
+En cada item <li>, agregar padding 10px y aplicar display: inline-block; para mostrar los elementos en línea.
+Plus: Ocultar el submenu (ul dentro del li) con display: none;*/
+nav{
+    background-color: rgb(116, 115, 114);
+    color: #fff;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    color: #fff;
+}
+nav li{
+    padding: 10px;
+    display: inline-block;
+}
+nav li ul{
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+nav a:hover{
+    color: #8EA9E6;
+}

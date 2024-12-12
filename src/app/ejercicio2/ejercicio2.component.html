@@ -1,0 +1,17 @@
+<!-- Ejercicio 2 -->
+<!-- En el template, mostrar el valor de esa variable con interpolación. -->
+<main>
+    <section class="container-bienvenida">
+        <div class="container">
+            <h1>{{bienvenida}}</h1>
+            <p *ngIf="esVisible">{{mensaje}}</p>
+            <!-- En el template, usando la directiva estructural ngIf, (importar NgIf en imports:[] del ts) ocultar uno de los mensajes usando la variable booleana. -->
+            <div class="container-button">
+                <button (click)="esVisible = !esVisible">
+                    {{ esVisible ? 'Ocultar mensaje' : 'Mostrar mensaje' }}
+                </button>
+            </div>
+        </div>
+    </section>
+
+</main>

@@ -1,0 +1,43 @@
+/* Plus: agregar estilos a los elementos del template usando el .css del componente. */
+
+h2 {
+    font-family: "Agu Display", serif;
+    color: #fff;
+    text-align: center;
+}
+
+p,
+ul {
+    font-size: 20px;
+    font-family: "Agu Display", serif;
+    color: #2a2525;
+    line-height: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    min-width: 100%;
+    position: relative;
+    padding: 35px;
+    background: linear-gradient(90deg, #58c7fa, #fa6dbd);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    padding: 25px;
+    
+}
+
+.card {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(222, 220, 220);
+}

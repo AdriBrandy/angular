@@ -1,0 +1,11 @@
+footer{
+    background-color: rgb(45, 45, 52);
+    padding: 20px;
+    text-align: center;
+    font-family: "Agu Display", serif;
+    font-size: 20px;
+}
+footer p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}

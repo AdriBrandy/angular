@@ -1,0 +1,26 @@
+/* Plus: agregar estilos a los elementos del template usando el .css del componente. */
+
+h2 {
+    font-family: "Agu Display", serif;
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Agu Display", serif;
+    color: #000000;
+    line-height: 30px;
+}
+
+.container{
+    background: rgb(236, 236, 255);
+    padding: 30px;
+    width: 100%;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    text-align: center;
+}
+
+.info{
+    margin-top: 20px;
+}
