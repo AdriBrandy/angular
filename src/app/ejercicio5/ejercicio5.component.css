@@ -13,7 +13,7 @@ Eliminar las bullets de la <ul> con: list-style: none;
 En cada item <li>, agregar padding 10px y aplicar display: inline-block; para mostrar los elementos en línea.
 Plus: Ocultar el submenu (ul dentro del li) con display: none;*/
 nav{
-    background-color: rgb(116, 115, 114);
+    /* background-color: rgb(116, 115, 114); */
     color: #fff;
     padding: 10px;
 }
