@@ -25,10 +25,12 @@ export class MovieService {
   private apiUrl = 'https://www.omdbapi.com/?apikey=2ff6c6e4';
 
   constructor(private http: HttpClient) {}
-
-  getEpisodes(title: string, season: number): Observable<{ Episodes: [] }> {
-    return  this.http.get<{Episodes: []}>('https://www.omdbapi.com/?apikey=2ff6c6e4&t=From&Season=1')
+  
+  getEpisodes(title: string, season: string): Observable<{ Episodes: [] }> {
+    const url = `${this.apiUrl}&t=${title}&Season=${season}`;
+    return this.http.get<{ Episodes: [] }>(url);
   }
+
 }
 
 interface Peliculas{

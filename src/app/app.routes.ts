@@ -8,8 +8,7 @@ export const routes: Routes = [
   { path: 'ejercicios', component: EjerciciosComponent },
   { path: 'pelis', component: MoviesComponent },
   { path: 'series', component: SeriesComponent },
-  { path: '', redirectTo: '/ejercicios', pathMatch: 'full' }, // Redirección por defecto
-  { path: '**', redirectTo: '/ejercicios' } // Manejo de rutas inexistentes
+  { path: '', redirectTo: '/ejercicios', pathMatch: 'full' },
 ];
 
 @NgModule({

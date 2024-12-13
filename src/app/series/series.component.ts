@@ -8,10 +8,10 @@ import { NgFor, NgIf } from '@angular/common';
   templateUrl: './series.component.html',
   styleUrl: './series.component.css'
 })
-export class SeriesComponent {
+export class SeriesComponent implements OnInit {
   episodes: any[] = [];
-  title = 'From'; // Título de la serie (puedes cambiarlo dinámicamente)
-  season = 1;    // Número de temporada (puedes cambiarlo dinámicamente)
+  title:string = 'Friends'; 
+  season:string = '6';    
 
   constructor(private movieService: MovieService) {}
 

@@ -1,7 +1,7 @@
 <main>
     <section>
         <div class="series-container">
-            <h1>Episodios de "{{ title }}" - Temporada {{ season }}</h1>
+            <h1>Episodios de "{{this.title}}" - Temporada {{this.season}}</h1>
             <ul *ngIf="episodes.length > 0; else loading">
               <li *ngFor="let episode of episodes">
                 <strong>{{ episode.Episode }}:</strong> {{ episode.Title }}
