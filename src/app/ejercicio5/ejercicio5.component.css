@@ -34,7 +34,9 @@ nav a{
     color: #fff;
 
 }
-
+nav:hover{
+    color: #58c7fa;
+}
 nav a:hover{
-    color: #8EA9E6;
+    color: #fa6dbd;
 }

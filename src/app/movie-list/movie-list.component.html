@@ -1,0 +1,16 @@
+<main>
+    <section>
+        <div class="movie-list">
+            <h2>Lista de Películas</h2>
+            <p *ngIf="selectedMovie">Película seleccionada: {{ selectedMovie }}</p>
+            <app-search-bar></app-search-bar>
+            <div class="card-container">
+                <div  *ngFor="let movie of movies">
+                    <app-movie-item [movie]="movie" (movieSelected)="onMovieSelected($event)">
+                    </app-movie-item>
+                </div>
+            </div>
+            <p *ngIf="selectedMovie">Película seleccionada: {{ selectedMovie }}</p>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,10 @@
+<div class="card-container">
+  <div class="card">
+    <div class="content">
+      <h3 class="heading">{{ movie.title }} ({{ movie.year }})</h3>
+      <p class="para" *ngIf="movie.description">{{ movie.description }}</p>
+      <img src="{{movie.image}}" alt="">
+      <button class="btn" (click)="selectMovie()">Seleccionar</button>
+    </div>
+  </div>
+</div>

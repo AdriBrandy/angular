@@ -1,0 +1,119 @@
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #0056b3;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.search-bar p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.Explore-Button {
+    width: fit-content;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(280deg, #58c7fa, #072a3b);
+}
+
+.IconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.telescope {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transition: all 1s;
+    transform: rotate(20deg);
+}
+
+.tripod {
+    width: 60%;
+    height: auto;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.Explore-Button:hover .telescope {
+    transform: rotate(-35deg);
+}
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        /* Cambia la disposición a columna */
+    }
+
+    .search-container button {
+        width: 100%;
+        /* El botón ocupa todo el ancho disponible */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .search-container input{
+        border-color:#fa6dbd;
+    }
+
+    .Explore-Button{
+        background: linear-gradient(280deg, #fa6dbd, #792a57);
+    }
+    
+}
+
