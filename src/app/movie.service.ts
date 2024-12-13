@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,9 +18,16 @@ export class MovieService {
     { title: 'El Rey León', year: 1994, description: 'La vida de Simba, un león destinado a ser rey.', image:"https://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/68/20/31/19785394.jpg?coixp=47&coiyp=41" },
     { title: 'Avatar', year: 2009, description: 'Exploración de un planeta alienígena.', image:"https://m.media-amazon.com/images/I/61l4F+4vu8L.jpg" }
   ];
-  constructor() { }
+
   getMovies() {
     return this.movies;
+  }
+  private apiUrl = 'https://www.omdbapi.com/?apikey=2ff6c6e4';
+
+  constructor(private http: HttpClient) {}
+
+  getEpisodes(title: string, season: number): Observable<{ Episodes: [] }> {
+    return  this.http.get<{Episodes: []}>('https://www.omdbapi.com/?apikey=2ff6c6e4&t=From&Season=1')
   }
 }
 

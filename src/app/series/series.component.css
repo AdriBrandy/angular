@@ -1,0 +1,25 @@
+.series-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 30px;
+    margin-top: 30px;
+}
+h1, li {
+    font-family: "Agu Display", serif;
+    color: #000000;
+    line-height: 40px;
+}
+li{
+    font-size: 20px;
+}
+ul{
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
