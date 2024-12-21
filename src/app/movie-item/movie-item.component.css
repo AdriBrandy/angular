@@ -76,12 +76,11 @@ img{
 
 @media only screen and (max-width: 400px) {
     .card{
-        max-width: 150px;
-        height: auto;
+        max-width: 100%;
         
     }
     .card-container{
-        max-width: 150px;
+        max-width: 250px;
         margin: 3px;
         padding: 5px;
     }
